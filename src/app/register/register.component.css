@@ -1,0 +1,46 @@
+.container3 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-columns: 10% 10% 10% 10% 10% 10%;
+}
+
+.signUp {
+  text-decoration-line: underline;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 3;
+}
+
+.register {
+  grid-row-start: 4;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end:3;
+}
+
+.AGB {
+  grid-row-start: 8;
+  grid-row-end: 8;
+  grid-column-start: 5;
+  grid-column-end: 3;
+}
+
+.registerNow {
+  background-color: lightskyblue;
+  height: 35px;
+  width: 150px;
+  grid-row-start: 9;
+  grid-row-end: 9;
+  grid-column-start: 9;
+  grid-column-end: 3;
+}
+
+.pleaseAccept {
+  color: red;
+  grid-row-start: 9;
+  grid-row-end: 9;
+  grid-column-start: 4;
+  grid-column-end: 4;
+}

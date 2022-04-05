@@ -1,0 +1,130 @@
+ul li{
+  list-style-type: none;
+}
+
+.kopf {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.aufgabeHinzufuegen {
+  height: 2cm;
+  width: 3cm;
+  background: royalblue;
+  font-size: 18px;
+  border: 2px black;
+
+}
+
+.aufgabeLoeschen {
+
+  font-size: 16px;
+  height: 30px;
+  width: 30px;
+
+
+}
+
+.resetAufgaben {
+  background: lightsteelblue;
+  height: 2cm;
+  width: 3cm;
+
+}
+
+.notizHinzufuegen {
+  background: royalblue;
+  font-size: 16px
+}
+
+.openTasks {
+  background: dodgerblue;
+  font-size: 40px;
+  height: 2cm;
+  width: 9cm;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 4;
+
+}
+
+.showNotes {
+  height: 2cm;
+  width: 3cm;
+  background-color: cornflowerblue;
+}
+
+.headToDo {
+  font-size: 60px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.toDo {
+  display: block;
+  overflow: scroll;
+  height: 550px;
+  width: 15cm;
+  font-size: 25px;
+  border-collapse: collapse;
+  border-color: royalblue;
+  border-spacing: 40px 20px;
+  background-color: gray;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.toDo td, .head {
+  padding: 10px;
+}
+
+.head {
+  color: aliceblue;
+  font-size: 35px;
+  background-color: gray;
+}
+
+.areaText {
+  font-size: 15px;
+  background-color: beige;
+  height: 2cm;
+  width: 4cm;
+}
+
+.container {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px 400px;
+  grid-template-columns: 31% 20% 20% 20% 20%;
+  border: 1px solid;
+}
+
+.btn-group {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.progress {
+  height: 40px;
+  width: 340px;
+  background-color: cornflowerblue;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.progress-bar {
+  background-color: midnightblue
+}
+
+

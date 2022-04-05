@@ -1,0 +1,17 @@
+<div class="container3">
+<h1 class="signUp">-Sign Up-</h1>
+  <div class="register">
+<p>Benutzername: </p>
+  <input [(ngModel)]="username">
+<p>E-Mail Adresse:</p>
+  <input [(ngModel)]="mailAdress">
+<p>Passwort:</p>
+  <input [(ngModel)]="password">
+  </div>
+<br>
+  <span class="AGB"><input type="checkbox" [(ngModel)]="checkAgb" >Ich habe die <a href="#">AGBs</a> vollständig gelesen und stimme zu.</span>
+<br>
+  <button class="registerNow" (click)="registerNow()">Jetzt registrieren!</button>
+<span class="pleaseAccept" *ngIf="agbNotAccept">Bitte die AGBs akzeptieren! </span>
+
+</div>

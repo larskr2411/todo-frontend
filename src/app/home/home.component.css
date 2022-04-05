@@ -1,0 +1,76 @@
+.container4 {
+  background: linear-gradient(to bottom, whitesmoke, lightskyblue);
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 50%;
+}
+
+.container5 {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 25% 25% 25% 25% 25% 25% 25%;
+}
+
+.homeRegister {
+  background-color: lightskyblue;
+  height: 50px;
+  width: 200px;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  transform: translate(-200px)
+
+}
+
+.homeLogin {
+  background-color: lightskyblue;
+  height: 50px;
+  width: 200px;
+  grid-row-start: 4;
+  grid-column-start: 2;
+
+}
+
+.welcomeHome {
+  font-size: 40px;
+  text-decoration-line: underline;
+
+}
+
+.homeWelcome {
+  grid-row-start: 2;
+  transform: translate(250px);
+}
+
+.navigationBar {
+  background: linear-gradient(to bottom, lightblue, lightsteelblue, lightskyblue, skyblue, deepskyblue);
+  /*background-color: lightskyblue;*/
+  font-size: 25px;
+  border: 3px solid;
+  width: 180px;
+  height: 600px;
+  grid-column-start: 1;
+  grid-row-start: 2;
+
+}
+
+.meineListe {
+  background-color: deepskyblue;
+  height: 70px;
+  width: 250px;
+  grid-row-start: 5;
+  grid-column-start: 3;
+  transform: translate(-140px);
+}
+
+footer {
+  transform: translate(800px);
+}
+
+h1 {
+  font-size: 60px;
+}
+
+

@@ -1,0 +1,12 @@
+<p (click)="zeigewas()">Hallo {{test}}</p>
+
+<ul>
+  <li *ngFor="let item of liste">{{item.name}}</li>
+</ul>
+
+
+<p *ngIf="liste.length > 3">
+  Ist Länger als 3
+</p>
+
+<input [(ngModel)]="test"/>

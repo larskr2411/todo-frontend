@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="kopf">
+      <p>Aufgabe:</p>
+      <input [(ngModel)]="neueAufgabe" />
+      <p>Deadline: </p>
+      <input type="number" [(ngModel)]="deadLineYear" />
+      <input type="number" [(ngModel)]="deadLineMonth" />
+      <input type="number" [(ngModel)]="deadLineDay" />
+    </div>
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button title="Hinzufügen" class="aufgabeHinzufuegen"(click)="aufgabeHinzufuegen()"><i class="fa-solid fa-plus"></i></button>
+      <button class="showNotes" (click)="showNote()">Notizen anzeigen</button>
+      <button class="resetAufgaben" (click)="resetAufgaben()"> Liste leeren</button>
+    </div>
+
+
+    <h1 class="headToDo"><b><u><em><i class="fa-solid fa-check"></i>To Do:</em></u></b> </h1>
+
+    <table class="toDo">
+      <tr>
+        <th class="head">Aufgabe</th>
+        <th class="head">Bis zum</th>
+      </tr>
+      <tr *ngFor="let aufgabe of (aufgaben | orderByImpure : '-deadLine')">
+        <td> <input type="checkbox" [(ngModel)]="aufgabe.done" (ngModelChange)="checkBox(aufgabe)">{{aufgabe.name}}</td>
+        <td>{{aufgabe.deadLine | date : 'dd.MM.yyyy'}}
+          <div class="bttn-group" role="group" aria-label="Basic example">
+            <button title="Löschen" class="aufgabeLoeschen" (click)="aufgabeLoeschen(aufgabe)"><i class="fa-solid fa-trash-can"></i></button>
+            <button title="Notiz hinzufügen" class="notizHinzufuegen" (click)="notizHinzufuegen(aufgabe)"><i class="fa-solid fa-notes-medical"></i></button>
+          </div>
+        </td>
+        <td>
+          <textarea class="areaText" *ngIf="aufgabe.add === 1" [(ngModel)]="aufgabe.note"></textarea>
+        </td>
+      </tr>
+    </table>
+
+    <div class="openTasks">
+      Offene Aufgaben: {{openTasks()}}
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar" [style]="{width:  getTodoPercentage() + '%'}" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+  </div>
+    <div *ngFor="let post of posts">
+     <h1>{{post.title}}</h1>
+    <p>{{post.body}}</p>
+  </div>
+
+
+
+

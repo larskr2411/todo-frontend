@@ -1,0 +1,60 @@
+.headLogIn {
+  font-size: 35px;
+  text-decoration-line: underline;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.logIn {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.anmelden {
+  background-color: lightskyblue;
+  height: 45px;
+  width: 150px;
+  grid-row-start: 7;
+  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 7;
+}
+
+.saveData {
+  display: inline;
+  height: 10px;
+  width: 10px;
+  grid-row-start: 6;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 2;
+
+}
+
+.container2 {
+  background-color: lightgray;
+  /*display: grid;*/
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-columns: 25% 25% 25% 25% 25% 25% 25% 25%;
+  padding: 80px 384px;
+}
+
+.forgotPW {
+  grid-row-start: 8;
+  grid-row-end: 8;
+  grid-column-start: 8;
+  grid-column-end: 2;
+}
+
+.wrongPW {
+  color: red;
+}
+
+
+
+
+

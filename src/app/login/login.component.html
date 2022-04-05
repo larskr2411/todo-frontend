@@ -1,0 +1,27 @@
+<div class="container2">
+
+<p class="headLogIn">--Sign in--</p>
+
+  <div class="logIn">
+    <p><i class="fa-solid fa-user"></i>Benutzername:</p>
+      <input [(ngModel)]="username">
+    <p><i class="fa-solid fa-key"></i>Passwort:</p>
+      <input [(ngModel)]="passwort">
+  </div>
+
+  <div  class="saveData">
+    <span style="width: 500px; display: block"><input type="checkbox"  [(ngModel)]="savePassword"> Daten speichern</span>
+  </div>
+
+  <br>
+<button class="anmelden" (click)="login()">Anmelden</button>
+<span class="wrongPW" *ngIf="errorHasOccurred">Falsches Passwort?</span>
+
+<br>
+  <br>
+<a class="forgotPW" routerLink="/forgotpassword">Passwort vergessen?</a>
+<br><a class="forgotPW" routerLink="/register">Jetzt Registrieren!</a>
+
+</div>
+
+
